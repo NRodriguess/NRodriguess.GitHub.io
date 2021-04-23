@@ -10,9 +10,11 @@ header {
   background-color: rgb(59, 197, 190);
   width: 100%;
   border-radius: 10px;
-
 }
 
+h1 {
+  margin-left: 160px;
+}
 
 body {
   background-color: white;
@@ -44,6 +46,6 @@ footer {
   width: 100%;
   height: auto;
   float: right;
-  padding: 20px;
+  padding: 15px;
 
 }
