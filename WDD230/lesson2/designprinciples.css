@@ -22,20 +22,27 @@ body {
 
 /* phone or baseline views **************************/
 main {
-  max-width: 767px;
+  max-width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   font-size: 0.8rem;
 }
 
 main section h3 {
   color: #536878;
+  margin-top: 0%;
 
+}
+
+main section h4 {
+  margin-top: -1px;
 }
 
 a {
   text-decoration: none;
+  margin-top: -1px;
+
 }
 
 main section {
@@ -51,7 +58,17 @@ main section:nth-child(2) {
 }
 
 .colimage {
-  box-shadow: 0 0 30px #333;
+  margin-top: 20px;
+  max-width: 900px;
+}
+
+.firstPhoto {
+  margin-top: 20px;
+}
+
+.lastPhoto {
+  margin-top: 20px;
+
 }
 
 /* Tablet Views ******************************/
