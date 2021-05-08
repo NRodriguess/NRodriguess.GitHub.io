@@ -1,0 +1,144 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,400;0,600;1,400&display=swap');
+
+
+/* not necessary */
+/* bluegrey matter   #637f80 light  #536872  #708090  #536878  #36454f dark */
+body {
+  font-size: 16px;
+  font-family: "Nunito";
+}
+
+header,
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: gray;
+}
+
+header,
+nav,
+footer {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  color: #536878;
+}
+
+h3 {
+  margin-bottom: 0%;
+}
+
+nav {
+  max-width: 785px;
+  background-color: #36454f;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  background-color: #bbb;
+  color: #36454f;
+}
+
+
+
+section {
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+section p {
+  margin-top: 0%;
+}
+
+section h1 {
+  margin-bottom: 0%;
+}
+
+footer {
+  flex: 0 1 100%;
+  height: 2rem;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+  /* Horizontal Menu Examples */
+  /* Flex *********************/
+  /*	nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+	*/
+
+  /* Grid *********************/
+  nav ul {
+    display: grid;
+    /*grid-template-columns: repeat(5, 1fr);*/
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  /* Inline-Block             */
+  /*
+			nav li {display: inline-block;}
+	*/
+
+  /* Float                    */
+  /*
+			nav li {float:left; margin-right:15px;}
+			main {clear:both;}
+	*/
+
+  /*******************************************************/
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  article:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article:nth-child(3) {
+    grid-column: span 1;
+  }
+}

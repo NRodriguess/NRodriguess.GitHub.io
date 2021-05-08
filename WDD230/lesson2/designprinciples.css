@@ -29,13 +29,13 @@ main {
   font-size: 0.8rem;
 }
 
-main section h3 {
+main section h1 {
   color: #536878;
   margin-top: 1px;
   font-family: 'Roboto', sans-serif;
 }
 
-main section h4 {
+main section h2 {
   margin-top: -2px;
 }
 
