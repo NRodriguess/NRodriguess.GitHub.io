@@ -22,10 +22,9 @@ p {
 
 /* phone or baseline views **************************/
 main {
-  max-width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 0.8rem;
 }
 
@@ -53,7 +52,6 @@ main section {
 }
 
 main section:nth-child(2) {
-  display: none;
   margin: 0.5rem;
 }
 
