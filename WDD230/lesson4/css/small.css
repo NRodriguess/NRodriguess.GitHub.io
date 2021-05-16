@@ -2,7 +2,7 @@
 
 /* This is the style for the header */
 header {
-  background-color: #fff;
+  background-color: #99B5D6;
   padding: 5px 0;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ header img {
 .subtitle {
   font-style: italic;
   letter-spacing: 1pt;
-  color: forestgreen;
+  color: #FFFF47;
   margin-left: 20px;
   font-size: .9rem;
 }
@@ -37,7 +37,7 @@ header img {
 nav {
   margin: 0 auto;
   max-width: 100%;
-  background-color: green;
+  background-color: #004052;
   font-family: 'Montaga', serif;
 
 }
@@ -58,15 +58,19 @@ nav {
 
 .navigation a {
   display: block;
-  padding: 0.75rem;
+  padding: 0.90rem;
   text-align: center;
   text-decoration: none;
   color: white;
+  font-weight: 500;
+  font-size: 20px;
+
 }
 
 .navigation a:hover {
   color: black;
-  background-color: #90ee90;
+  background-color: #ffff;
+
 }
 
 main {
@@ -76,8 +80,12 @@ main {
 footer {
   color: white;
   text-align: center;
-  background-color: green;
+  background-color: #004052;
   width: 100%;
   height: 70px;
   padding: 0px;
+}
+
+.responsive li {
+  display: block;
 }

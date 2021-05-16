@@ -1,8 +1,13 @@
 @media only screen and (min-width: 32.5em) {
 
-  header img {
-    width: 250px;
+  header {
+    height: 200px;
+    margin: 0%;
+  }
 
+
+  header img {
+    width: 200px;
   }
 
   .heading h1 {
@@ -12,12 +17,17 @@
   .subtitle {
     letter-spacing: 1.5pt;
     font-size: larger;
-    margin-left: 17px;
+
   }
 
   .navigation {
     display: flex;
     justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
   }
 
   .navigation li {
@@ -34,10 +44,25 @@
     display: none;
   }
 
+  h2 {
+    padding-left: 350px;
+  }
+
+  .content {
+    width: 960px;
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed;
+    padding: 15px;
+    color: black;
+    font-style: italic;
+  }
+
+
   footer {
     color: white;
     text-align: center;
-    background-color: green;
+    background-color: #004052;
     width: 100%;
     height: 70px;
     padding: 4px;
