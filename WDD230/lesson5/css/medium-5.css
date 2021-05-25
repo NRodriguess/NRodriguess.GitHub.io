@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 32.5em) {
 
   header {
     height: 200px;
@@ -20,6 +20,11 @@
     letter-spacing: 1.5pt;
     font-size: larger;
     text-shadow: #333;
+
+  }
+
+  nav {
+    max-width: 100%;
 
   }
 
@@ -54,15 +59,8 @@
     margin: 10px auto;
     position: relative;
     border: 1px;
-    width: 960px;
-    height: 400px;
-  }
-
-  main img {
-    display: block;
-    object-fit: cover;
-    width: 960px;
-    height: 400px;
+    width: 100%;
+    height: 70%;
   }
 
   .weathersummary {
@@ -86,7 +84,7 @@
     margin: 10px auto;
     position: relative;
     background-color: #004052;
-    width: 960px;
+    width: 100%;
     height: 150px;
   }
 
@@ -128,42 +126,24 @@
 
   /* End of the table code*/
 
-
-  .article {
-    margin: 10px auto;
-    position: relative;
-    padding: 10px;
-    background-color: #bbb;
-    width: 960px;
-    height: 300px;
-  }
-
-
-
+  img,
   .artimage {
-    object-fit: cover;
-    width: 400px;
-    height: 200px;
-    float: right;
+    width: 100%;
+    height: 70%;
   }
 
+
+  .responsive li {
+    display: block;
+  }
 
   footer {
     color: white;
     text-align: center;
     background-color: #004052;
     width: 100%;
-    height: 500px;
+    height: 70%;
     padding: 4px;
-  }
-
-  footer img {
-    float: left;
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 60px;
-    padding-left: 50px;
   }
 
 }
