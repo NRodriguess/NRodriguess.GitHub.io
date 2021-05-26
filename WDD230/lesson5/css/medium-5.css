@@ -51,7 +51,11 @@
     display: none;
   }
 
-  h2 {
+  .banner {
+    display: none;
+  }
+
+  main h2 {
     padding-left: 350px;
   }
 
@@ -72,6 +76,7 @@
     padding: .5em;
     box-shadow: 0 0 30px #333;
     opacity: .9;
+    font-size: 15px;
   }
 
   section p {
@@ -90,15 +95,16 @@
 
   .content h2 {
     color: white;
-    align-items: center;
+    text-align: center;
     padding-top: 10px;
+    padding-left: 70px;
   }
 
 
   table {
     position: absolute;
     top: 60px;
-    left: 340px;
+    left: 150px;
   }
 
   table,
