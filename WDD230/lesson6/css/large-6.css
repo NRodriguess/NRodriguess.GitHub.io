@@ -71,7 +71,7 @@
 
   .weathersummary {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 50px;
     background: radial-gradient(#ffff47, lightyellow);
     border: 1px solid;
@@ -142,8 +142,6 @@
     width: 960px;
     height: 300px;
   }
-
-
 
   .artimage {
     object-fit: cover;

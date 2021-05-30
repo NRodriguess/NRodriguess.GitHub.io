@@ -3,8 +3,6 @@
   header {
     height: 200px;
     margin: 0%;
-    box-shadow: #333;
-
   }
 
 
@@ -19,8 +17,6 @@
   .subtitle {
     letter-spacing: 1.5pt;
     font-size: larger;
-    text-shadow: #333;
-
   }
 
   .navigation {
@@ -116,7 +112,6 @@
     border-collapse: collapse;
     padding: 5px;
     color: black;
-    font-weight: 500px;
   }
 
   td {
