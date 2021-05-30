@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="" content="IE=edge">
+
   <meta name="description" content="Weather site for lesson 4">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Site</title>
@@ -15,7 +15,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,300;1,200&family=Yeseva+One&display=swap"
     rel="stylesheet">
-  <script defer src="/WDD230/lesson6/js/"></script>
+  <script defer src="/WDD230/lesson6/js/banner-6.js"></script>
 </head>
 
 <body>
@@ -48,14 +48,19 @@
   <main>
     <h2>Preston Idaho</h2>
     <div class="summdiv">
-      <img src="images/snow.jpg" alt="map">
+      <picture>
+        <source srcset="images/hero-medium.jpg" media='(min-width: 500px) and (max-width:799px'>
+        <source srcset="images/hero-large1.jpg" media="(min-width: 800px)">
+        <img src="images/hero-small.jpg" alt="small">
+      </picture>
       <section class="weathersummary">
         <h3>Weather Summary</h3>
         <hr>
-        <p>Temperrature:</p>
-        <p>Humidity:</p>
-        <p>Wind Speed:</p>
-        <p>Season:</p>
+        <p>Currently:Sunny</p>
+        <p>Temperature: <span id="temp">76</span>&deg;F</p>
+        <p>Humidity: 50%</p>
+        <p>Wind Speed:<span id="windspeed">5</span>mph</p>
+        <p>Wind Chill:<span id="windchill"></span>&deg;F</p>
       </section>
     </div>
 
