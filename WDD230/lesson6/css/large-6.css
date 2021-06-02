@@ -3,8 +3,6 @@
   header {
     height: 200px;
     margin: 0%;
-    box-shadow: #333;
-
   }
 
 
@@ -19,8 +17,6 @@
   .subtitle {
     letter-spacing: 1.5pt;
     font-size: larger;
-    text-shadow: #333;
-
   }
 
   .navigation {
@@ -71,7 +67,7 @@
 
   .weathersummary {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 50px;
     background: radial-gradient(#ffff47, lightyellow);
     border: 1px solid;
@@ -116,7 +112,6 @@
     border-collapse: collapse;
     padding: 5px;
     color: black;
-    font-weight: 500px;
   }
 
   td {
@@ -142,6 +137,8 @@
     width: 960px;
     height: 300px;
   }
+
+
 
   .artimage {
     object-fit: cover;

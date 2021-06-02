@@ -30,7 +30,7 @@ header img {
   color: #FFFF47;
   margin-left: 20px;
   font-size: .9rem;
-  text-shadow: black;
+
 }
 
 /* The end of the header style*/
@@ -65,7 +65,6 @@ nav {
   color: white;
   font-weight: 500;
   font-size: 20px;
-  box-shadow: #333;
 
 }
 
@@ -76,6 +75,7 @@ nav {
 }
 
 aside {
+  display: none;
   background-color: #99B5D6;
   text-align: center;
   width: 100%;
@@ -128,7 +128,6 @@ td {
   border-collapse: collapse;
   padding: 5px;
   color: black;
-  font-weight: 500px;
 }
 
 td {
