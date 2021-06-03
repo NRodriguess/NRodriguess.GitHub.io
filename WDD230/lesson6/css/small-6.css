@@ -143,14 +143,6 @@ tr :first-child {
 }
 
 
-img,
-.artimage {
-  width: 100%;
-  height: 70%;
-}
-
-
-
 
 .responsive li {
   display: block;
