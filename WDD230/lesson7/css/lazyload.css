@@ -16,7 +16,7 @@ img:hover {
 }
 
 img[data-src] {
-  filter: blur(0.8em);
+  filter: blur(0.em);
 }
 
 img {
