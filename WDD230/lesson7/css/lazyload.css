@@ -1,0 +1,25 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 30px;
+  grid-gap: 30px;
+}
+
+img {
+  min-width: 50px;
+  min-height: 200px;
+  width: 100%;
+}
+
+img:hover {
+  box-shadow: 20px 20px 30px 15px #333;
+}
+
+img[data-src] {
+  filter: blur(0.8em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}

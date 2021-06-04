@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Load</title>
+  <link rel="stylesheet" href="css/lazyload.css">
+  <link rel="stylesheet" href="css/lazyload-large.css">
+</head>
+
+<body>
+  <h1>Progressive Loading (images)</h1>
+
+  <main>
+    <picture>
+      <img src="images/idaho-forest.jpg" data-src="http://placehold.jp/99ccff/003366/300x400.jpg" alt="desert">
+    </picture>
+
+    <picture>
+      <img src="images/idaho-house.jpg" data-src="http://placehold.jp/300x400.png" alt="forest">
+    </picture>
+
+    <picture>
+      <img src="images/idaho-road.jpg" data-src="http://placehold.jp/99ccff/003366/300x400.jpg" alt="house">
+    </picture>
+
+    <picture>
+      <img src="images/idaho-wilderness.jpg" data-src="http://placehold.jp/300x400.png" alt="flag">
+    </picture>
+
+    <picture>
+      <img src="images/usa-flag.jpg" data-src="http://placehold.jp/99ccff/003366/300x400.jpg" alt="road">
+    </picture>
+  </main>
+
+  <script src="/WDD230/lesson7/js/lazyload.js"></script>
+</body>
+
+</html>
