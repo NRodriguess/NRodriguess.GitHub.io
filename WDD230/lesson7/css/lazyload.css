@@ -1,11 +1,13 @@
 main {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   margin: 30px;
   grid-gap: 30px;
 }
 
 img {
+  border: solid #333;
   min-width: 50px;
   min-height: 200px;
   width: 100%;
