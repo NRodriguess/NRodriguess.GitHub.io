@@ -30,7 +30,7 @@ img:hover {
 }
 
 img[data-src] {
-  filter: blur(0.em);
+  filter: blur(1.em);
 }
 
 img {
