@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storm page</title>
+  <link rel="stylesheet" href="css/storm.css">
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/icon.png" alt="The world logo">
+    </picture>
+    <section class="heading">
+      <h1>Mountains weather news</h1>
+      <div class="subtitle">All the weather information you need</div>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a class="menu" href="#"> Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <h2>Storm Center</h2>
+
+  <h3>Storm Center Applicant Information</h3>
+
+  <main>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required minlength="5" size="10"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="youremail@email.com"><br>
+
+    <label for="phonenumber">Phone number:</label>
+    <input type="tel" id="phonenumber" required><br>
+
+    <label for="zipcode">Zip Code:</label>
+    <input type="number" id="zipcode" required><br>
+
+    <label for="date">Storm Date:</label>
+    <input type="date" id="date" required><br>
+
+    <label for="storm-list">Storm Date:</label>
+    <input list="weather-changing" id="storm-list" name="weather" /><br>
+
+    <datalist id="weather-changing">
+      <option value="Flash Flood">
+      <option value="Hail">
+      <option value="Hurricane">
+      <option value="Thunderstorm">
+      <option value="Tornado">
+    </datalist>
+
+    <label for="date">Storm Severity:</label>
+    <label for="volume">1</label>
+    <input type="range" list="tickmarks" min="1" max="10">
+    <label for="volume">10</label><br>
+
+    <label for="Region">Storm Region:</label>
+    <select name="storm-region">
+      <option value>Select Region...</option>
+      <option value="preston">Preston</option>
+      <option value="soda">Soda Spring</option>
+      <option value="fish">Fish Haven</option>
+    </select>
+
+    <p>Danger Level</p>
+    <div>
+      <input type="radio" id="yes" name="drone" value="yes" checked>
+      <label for="yes">Yes</label>
+    </div>
+
+    <div>
+      <input type="radio" id="maybe" name="drone" value="second">
+      <label for="maybe">Maybe</label>
+    </div>
+
+    <div>
+      <input type="radio" id="no" name="drone" value="third">
+      <label for="no">No</label>
+    </div>
+
+    <label for="comment">Additional Comments</label>
+    <textarea id="free-writing" name="free-writing" rows="4" cols="30"></textarea>
+    <input type="submit" value="Send Storm Application">
+
+
+
+
+  </main>
+
+  <footer>
+    <p id="copy">
+      &copy; <span id="currentyear"></span> The Weather Site | Attributions | Nicolas Rodrigues |
+      Last updated: <span id="currentDay"></span>
+    </p>
+  </footer>
+  <script src="/WDD230/lesson6/js/preston-6.js"></script>
+  <script src="/WDD230/lesson6/js/menu.js"></script>
+</body>
+
+</html>
