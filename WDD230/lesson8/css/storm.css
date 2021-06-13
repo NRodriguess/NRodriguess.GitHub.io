@@ -71,15 +71,81 @@ nav {
 .navigation a:hover {
   color: black;
   background-color: #ffff;
+}
 
+.content {
+  display: block;
+  padding-left: 10px;
+  border: solid #004052;
+}
+
+.lab {
+  display: block;
+  padding-top: 1rem;
+}
+
+label {
+  cursor: default;
+}
+
+input {
+  display: block;
+  background-color: #99B5D6;
+  border-radius: 4px;
 }
 
 
 footer {
   color: white;
   text-align: center;
+  align-items: center;
   background-color: #004052;
   width: 100%;
-  height: 70%;
-  padding: 0px;
+  height: 70px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 60rem) {
+
+  header {
+    height: 200px;
+    margin: 0%;
+  }
+
+
+  header img {
+    width: 200px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
 }
