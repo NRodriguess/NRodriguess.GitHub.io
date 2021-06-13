@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Storm page</title>
   <link rel="stylesheet" href="css/storm.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -34,25 +35,26 @@
 
   <h2>Storm Center</h2>
 
-  <h3>Storm Center Applicant Information</h3>
+  <div class="content">
+    <h3>Storm Center Applicant Information</h3>
 
-  <main>
-    <label for="name">Full Name:</label>
+
+    <label class="lab" for="name">Full Name:</label>
     <input type="text" id="name" name="name" required minlength="5" size="10"><br>
 
-    <label for="email">Email:</label>
+    <label class="lab" for="email">Email:</label>
     <input type="email" id="email" placeholder="youremail@email.com"><br>
 
-    <label for="phonenumber">Phone number:</label>
+    <label class="lab" for="phonenumber">Phone number:</label>
     <input type="tel" id="phonenumber" required><br>
 
-    <label for="zipcode">Zip Code:</label>
+    <label class="lab" for="zipcode">Zip Code:</label>
     <input type="number" id="zipcode" required><br>
 
-    <label for="date">Storm Date:</label>
+    <label class="lab" for="date">Storm Date:</label>
     <input type="date" id="date" required><br>
 
-    <label for="storm-list">Storm Date:</label>
+    <label class="lab" for="storm-list">Storm Date:</label>
     <input list="weather-changing" id="storm-list" name="weather" /><br>
 
     <datalist id="weather-changing">
@@ -66,9 +68,9 @@
     <label for="date">Storm Severity:</label>
     <label for="volume">1</label>
     <input type="range" list="tickmarks" min="1" max="10">
-    <label for="volume">10</label><br>
+    <label for="volume">10</label>
 
-    <label for="Region">Storm Region:</label>
+    <label class="lab" for="Region">Storm Region:</label>
     <select name="storm-region">
       <option value>Select Region...</option>
       <option value="preston">Preston</option>
@@ -76,8 +78,8 @@
       <option value="fish">Fish Haven</option>
     </select>
 
-    <p>Danger Level</p>
     <div>
+      <p>Danger Level</p>
       <input type="radio" id="yes" name="drone" value="yes" checked>
       <label for="yes">Yes</label>
     </div>
@@ -90,16 +92,12 @@
     <div>
       <input type="radio" id="no" name="drone" value="third">
       <label for="no">No</label>
-    </div>
+    </div><br>
 
-    <label for="comment">Additional Comments</label>
-    <textarea id="free-writing" name="free-writing" rows="4" cols="30"></textarea>
-    <input type="submit" value="Send Storm Application">
-
-
-
-
-  </main>
+    <label for="comment">Additional Comments</label><br>
+    <textarea id="free-writing" name="free-writing" rows="4" cols="30"></textarea><br>
+    <input type="submit" value="Send Storm Application"><br>
+  </div>
 
   <footer>
     <p id="copy">
