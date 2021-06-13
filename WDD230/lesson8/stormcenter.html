@@ -52,7 +52,7 @@
     <input type="number" id="zipcode" required><br>
 
     <label class="lab" for="date">Storm Date:</label>
-    <input type="date" id="date" required><br>
+    <input type="date" id="date" required>
 
     <label class="lab" for="storm-list">Storm Date:</label>
     <input list="weather-changing" id="storm-list" name="weather" /><br>
@@ -65,18 +65,31 @@
       <option value="Tornado">
     </datalist>
 
-    <label for="date">Storm Severity:</label>
-    <label for="volume">1</label>
-    <input type="range" list="tickmarks" min="1" max="10">
-    <label for="volume">10</label>
+    <label class="lab" for="date">Storm Ranger:
+      <input type="range" id="date" value min="1" max="10" step="1" list="tickmarks">
+      <span id="ratingvalue"></span> </label>
+    <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="1"></option>
+      <option value="2"></option>
+      <option value="3"></option>
+      <option value="4"></option>
+      <option value="5"></option>
+      <option value="6"></option>
+      <option value="7"></option>
+      <option value="8"></option>
+      <option value="9"></option>
+      <option value="10"></option>
+    </datalist>
 
-    <label class="lab" for="Region">Storm Region:</label>
-    <select name="storm-region">
+    <label for="region">Storm Region:</label>
+    <select id="region" name="storm-region">
       <option value>Select Region...</option>
       <option value="preston">Preston</option>
       <option value="soda">Soda Spring</option>
       <option value="fish">Fish Haven</option>
     </select>
+
 
     <div>
       <p>Danger Level</p>
@@ -94,9 +107,9 @@
       <label for="no">No</label>
     </div><br>
 
-    <label for="comment">Additional Comments</label><br>
-    <textarea id="free-writing" name="free-writing" rows="4" cols="30"></textarea><br>
-    <input type="submit" value="Send Storm Application"><br>
+    <label class="lab" for="comment">Additional Comments</label><br>
+    <textarea id="comment" name="free-writing" rows="4" cols="30"></textarea><br>
+    <input type="submit" value="Send Storm Application">
   </div>
 
   <footer>
