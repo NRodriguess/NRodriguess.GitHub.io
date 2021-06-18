@@ -39,22 +39,22 @@
     <h3>Storm Center Applicant Information</h3>
 
 
-    <label class="lab" for="name">Full Name:</label>
+    <label class="lab" for="name">Full Name*:</label>
     <input type="text" id="name" name="name" required minlength="5" size="10"><br>
 
     <label class="lab" for="email">Email:</label>
     <input type="email" id="email" placeholder="youremail@email.com"><br>
 
-    <label class="lab" for="phonenumber">Phone number:</label>
+    <label class="lab" for="phonenumber">Phone number*:</label>
     <input type="tel" id="phonenumber" required><br>
 
-    <label class="lab" for="zipcode">Zip Code:</label>
+    <label class="lab" for="zipcode">Zip Code*:</label>
     <input type="number" id="zipcode" required><br>
 
-    <label class="lab" for="date">Storm Date:</label>
+    <label class="lab" for="date">Storm Date*:</label>
     <input type="date" id="date" required>
 
-    <label class="lab" for="storm-list">Storm Date:</label>
+    <label class="lab" for="storm-list">Storm Type:</label>
     <input list="weather-changing" id="storm-list" name="weather" /><br>
 
     <datalist id="weather-changing">
@@ -65,9 +65,9 @@
       <option value="Tornado">
     </datalist>
 
-    <label class="lab" for="date">Storm Ranger:
-      <input type="range" id="date" value min="1" max="10" step="1" list="tickmarks">
-      <span id="ratingvalue"></span> </label>
+    <label class="lab" for="severity">Storm Ranger:
+      <input type="range" id="severity" value min="1" max="10" step="1" list="tickmarks">
+    </label>
     <datalist id="tickmarks">
       <option value="0"></option>
       <option value="1"></option>
@@ -80,7 +80,7 @@
       <option value="8"></option>
       <option value="9"></option>
       <option value="10"></option>
-    </datalist>
+    </datalist><br>
 
     <label for="region">Storm Region:</label>
     <select id="region" name="storm-region">
