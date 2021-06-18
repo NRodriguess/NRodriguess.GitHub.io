@@ -14,10 +14,12 @@ fetch(requestURL)
       let h2 = document.createElement('h2');
 
       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+      image.setAttribute('src', prophets[i].imageurl);
 
-      card.appendChild(h2);
 
-      document.querySelector('div.cards').appendChild(card);
+      card.append(h2);
+
+      document.querySelector('div.cards').append(card);
 
     }
 
