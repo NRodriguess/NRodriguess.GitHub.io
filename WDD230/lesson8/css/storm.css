@@ -73,7 +73,7 @@ nav {
   background-color: #ffff;
 }
 
-.content {
+form {
   display: block;
   padding-left: 10px;
   border: solid #004052;
@@ -92,6 +92,7 @@ input {
   display: block;
   background-color: #99B5D6;
   border-radius: 4px;
+  height: 20px;
 }
 
 

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Storm page</title>
   <link rel="stylesheet" href="css/storm.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -35,12 +34,13 @@
 
   <h2>Storm Center</h2>
 
-  <div class="content">
+  <form method="GET" action="submited.html">
     <h3>Storm Center Applicant Information</h3>
 
 
     <label class="lab" for="name">Full Name*:</label>
-    <input type="text" id="name" name="name" required minlength="5" size="10"><br>
+    <input type="text" id="name" name="fulname" required pattern="^.* .*$" required minlength="5" size="10"><br>
+    <!--<input type="text" id="name" name="name" required minlength="5" size="10"><br>-->
 
     <label class="lab" for="email">Email:</label>
     <input type="email" id="email" placeholder="youremail@email.com"><br>
@@ -110,7 +110,7 @@
     <label class="lab" for="comment">Additional Comments</label><br>
     <textarea id="comment" name="free-writing" rows="4" cols="30"></textarea><br>
     <input type="submit" value="Send Storm Application">
-  </div>
+  </form>
 
   <footer>
     <p id="copy">
