@@ -13,15 +13,15 @@ fetch(requestURL)
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let img = document.createElement('img')
-      let h4 = document.createElement('p')
+      let h4 = document.createElement('h4')
       let p = document.createElement('p')
 
       h2.innerHTML =  `${prophets[i].name} <span class="purple">${prophets[i].lastname}</span>`;
       h4.innerHTML = 'Date of Birth - '  + prophets[i].birthdate;
-      p.innerHTML = 'Date of Place - '  + prophets[i].birthplace;
+      p.innerHTML = 'Place of Birth - '  + prophets[i].birthplace;
       img.setAttribute('src', prophets[i].imageurl);
       img.setAttribute('alt', `The official portrait of ${prophets[i].name} ${prophets[i].lastname}!`);
-      
+      img.style.boxShadow = '0 0 30px #999';
 
 
       card.append(h2);

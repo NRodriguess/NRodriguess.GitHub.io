@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Weather site for lesson 4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Site</title>
+  <link rel="short icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,300;1,200&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+  <script defer src='/WDD230/lesson6/js/windchill.js'></script>
+  <script defer src='/WDD230/lesson9/js/town.js'></script>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/weather-mountain.png" alt="The world logo">
+    </picture>
+    <section class="heading">
+      <h1>Mountains weather news</h1>
+      <div class="subtitle">All the weather information you need</div>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a class="menu" href="#"> Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <p>"Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion."</p>
+  </aside>
+
+  <main>
+    <div class="summdiv">
+      <img src="images/snow.jpg" alt="map">
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <hr>
+        <p>Currently: Sunny</p>
+        <p>Temperature: <span id="temp">40</span>&deg;F</p>
+        <p>Humidity: 50%</p>
+        <p>Wind Speed: <span id="windspeed">8</span>mph</p>
+        <p>Wind Chill: <span id="windoutput"></span>&deg;F</p>
+      </section>
+    </div>
+
+    <main>
+      <div class="cards"></div>
+    </main>
+
+    <footer>
+      <img src="images/maps.jpeg" alt="maps">
+      <h2>Contact information</h2>
+      <p>Adress: 20198768</p>
+      <p>Phone: 20198768</p>
+      <p>Email: name@gmail.com</p><br>
+      <p id="copy">
+        &copy; <span id="currentyear"></span> The Weather Site | Attributions | Nicolas Rodrigues |
+        Last updated: <span id="currentDay"></span>
+      </p>
+    </footer>
+    <script src="/WDD230/lesson5/js/preston-5.js"></script>
+    <script src="/WDD230/lesson5/js/menu5.js"></script>
+
+
+</body>
+
+</html>
