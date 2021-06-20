@@ -25,6 +25,6 @@ fetch(requestURL)
       card.append(h4);
       card.append(img);
 
-      document.querySelector('div.cards').append(card);
+      document.querySelector('div.text-town').append(card);
     })
   });
