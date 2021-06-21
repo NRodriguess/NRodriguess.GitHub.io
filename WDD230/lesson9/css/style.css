@@ -373,12 +373,11 @@ footer {
     gap: 10px;
   }
 
-  .towns img {}
-
-  .data {
-    text-align: center;
-    justify-items: end;
+  .towns img {
+    max-width: 200px;
   }
+
+  .data {}
 
 
 
