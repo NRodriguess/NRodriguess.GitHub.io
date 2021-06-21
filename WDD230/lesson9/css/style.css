@@ -111,11 +111,7 @@ img {
   max-width: 100%;
 }
 
-.content {
-  margin: 10px auto;
-  position: relative;
-  background-color: #004052;
-}
+
 
 .towns {
   max-width: 100%;
@@ -224,22 +220,6 @@ footer {
     font-weight: 300;
   }
 
-  /*The begining of the forecast code*/
-  .content {
-    margin: 10px auto;
-    position: relative;
-    background-color: #004052;
-    width: 100%;
-    height: 150px;
-  }
-
-  .content h2 {
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 70px;
-  }
-
   .towns h2 {
     text-align: center;
   }
@@ -266,7 +246,7 @@ footer {
     flex-direction: row-reverse;
   }
 
-  .town img {
+  .towns img {
     width: 100%;
     height: auto;
   }
@@ -281,7 +261,7 @@ footer {
 
   footer img {
     width: 400px;
-    height: 200px;
+    height: 250px;
     float: left;
   }
 
@@ -291,6 +271,124 @@ footer {
     background-color: #004052;
     width: 100%;
     height: 70%;
+    padding: 4px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    height: 200px;
+    margin: 0%;
+  }
+
+
+  header img {
+    width: 200px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  h2 {
+    padding-left: 350px;
+  }
+
+  .summdiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 960px;
+    height: 400px;
+  }
+
+  main img {
+    display: block;
+    object-fit: cover;
+    width: 960px;
+    height: 400px;
+  }
+
+  .weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: radial-gradient(#ffff47, lightyellow);
+    border: 1px solid;
+    padding: .5em;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    font-size: 20px;
+  }
+
+  section p {
+    margin: 0%;
+    font-weight: 300;
+  }
+
+  .towns {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .towns img {}
+
+  .data {
+    text-align: center;
+    justify-items: end;
+  }
+
+
+
+
+  footer {
+    color: white;
+    text-align: center;
+    background-color: #004052;
+    width: 100%;
+    height: 250px;
     padding: 4px;
   }
 
