@@ -1,0 +1,68 @@
+small
+.towns {
+  max-width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.towns section {
+  display: grid;
+  background-color: #99B5D6;
+}
+
+medium
+.towns h2 {
+    text-align: center;
+  }
+
+  .towns {
+    max-width: 960px;
+    margin: .5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .35rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: .5rem auto;
+    border: 1px solid #333;
+    background-color: #99B5D6;
+
+  }
+
+  article:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .towns img {
+    width: 100%;
+    height: auto;
+  }
+
+  .data {
+    margin: 10px;
+  }
+
+
+large
+.towns {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+
+  .data {
+    width: 100px;
+    text-align: end;
+  }
