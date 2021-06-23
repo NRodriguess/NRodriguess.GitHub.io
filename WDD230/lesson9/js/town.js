@@ -34,6 +34,6 @@ fetch(requestURL)
       card.append(annual);
       card.append(img);
 
-      document.querySelector('div.cards').append();
+      document.querySelector('div.cards').append(card);
     }}
   );
