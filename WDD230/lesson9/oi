@@ -1,11 +1,11 @@
 small
-.towns {
+main {
   max-width: 100%;
   padding: 5px;
   margin-bottom: 5px;
 }
 
-.towns section {
+main section {
   display: grid;
   background-color: #99B5D6;
 }
@@ -23,7 +23,7 @@ medium
     padding: .35rem;
   }
 
-  article {
+  .cards {
     display: flex;
     flex-direction: row;
     max-width: 800px;
