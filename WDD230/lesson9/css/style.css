@@ -10,6 +10,8 @@ header {
   font-family: 'Yeseva One', cursive;
 }
 
+
+
 header img {
   width: 90px;
 }
@@ -107,13 +109,40 @@ main {
   font-size: 15px;
 }
 
-img {
+.summdiv img {
   max-width: 100%;
 }
 
+.cards {
+  display: grid;
+}
+
+.cards section {
+  display: grid;
+  max-width: 100%;
+  text-align: center;
+  background: #387794;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  border: solid #333;
+}
+
+.cards section img {
+  max-width: 100%;
+  align-self: end;
+  justify-self: center;
+}
 
 .responsive li {
   display: block;
+}
+
+.news-part {
+  background-color: #FFFF47;
+  border: solid rgb(90, 82, 82);
+  margin: 10px;
+  padding: 5px;
 }
 
 footer {
@@ -178,9 +207,6 @@ footer {
     display: none;
   }
 
-  main h2 {
-    padding-left: 350px;
-  }
 
   .summdiv {
     margin: 10px auto;
@@ -203,9 +229,35 @@ footer {
     font-size: 20px;
   }
 
-  section p {
+  main section p {
     margin: 0%;
     font-weight: 300;
+  }
+
+  .cards section h2 {
+    padding-left: 0%;
+  }
+
+  .cards section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  .cards section:nth-child(even) img {
+    justify-self: right;
+  }
+
+  .cards section:nth-child(odd) .citytown {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .cards section img {
+    max-width: 100%;
+    align-self: end;
   }
 
 
@@ -312,6 +364,19 @@ footer {
   section p {
     margin: 0%;
     font-weight: 300;
+  }
+
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cards section {
+    grid-template-columns: 1fr;
+  }
+
+  .cards section:nth-child(odd) .citytown {
+    grid-column: 1;
   }
 
 
