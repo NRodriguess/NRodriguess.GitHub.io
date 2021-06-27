@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,300;1,200&family=Yeseva+One&display=swap');
+
+/* This is the style for the header */
+header {
+  background-color: #99B5D6;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Yeseva One', cursive;
+}
+
+header img {
+  width: 80px;
+}
+
+.heading h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0 17px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-style: italic;
+  letter-spacing: 1pt;
+  color: #FFFF47;
+  margin-left: 20px;
+  font-size: .9rem;
+
+}
+
+/* The end of the header style*/
+
+nav {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #004052;
+  font-family: 'Montaga', serif;
+}
+
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0%;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.90rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.navigation a:hover {
+  color: black;
+  background-color: #ffff;
+
+}
+
+aside {
+  display: none;
+  background-color: #99B5D6;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.summdiv {
+  margin: 10px auto;
+  position: relative;
+  border: 1px;
+  width: 100%;
+  height: 70%;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: radial-gradient(#ffff47, lightyellow);
+  border: 1px solid;
+  padding: .5em;
+  box-shadow: 0 0 30px #333;
+  opacity: .9;
+  font-size: 12px;
+}
+
+.content {
+  text-align: center;
+  max-width: 100%;
+  color: white;
+  margin: 10px auto;
+  position: relative;
+  background-color: #004052;
+}
+
+.responsive li {
+  display: block;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #004052;
+  width: 100%;
+  height: 70%;
+  padding: 0px;
+}
+
+/*********Medium Style css************/
+@media only screen and (min-width: 32.5em) {
+
+  header {
+    height: 200px;
+    margin: 0%;
+  }
+
+
+  header img {
+    width: 200px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+  }
+
+  nav {
+    max-width: 100%;
+
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  main h2 {
+    padding-left: 350px;
+  }
+
+  .summdiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 100%;
+    height: 70%;
+  }
+
+  .weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: radial-gradient(#ffff47, lightyellow);
+    border: 1px solid;
+    padding: .5em;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    font-size: 15px;
+  }
+
+  section p {
+    margin: 0%;
+    font-weight: 300;
+  }
+
+  /*The begining of the forecast code*/
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px auto;
+    position: relative;
+    background-color: #004052;
+    width: 100%;
+    height: 100px;
+  }
+
+  .content h2 {
+    /*color: rgb(85, 78, 78);
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 70px;*/
+  }
+
+
+  table {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+  }
+
+  table,
+  th,
+  td {
+    background-color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    color: black;
+  }
+
+  td {
+    background-color: #004052;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  tr :first-child {
+    background-color: white;
+    color: black;
+  }
+
+  /* End of the table code*/
+
+  img,
+  .artimage {
+    width: 100%;
+    height: 70%;
+  }
+
+
+  .responsive li {
+    display: block;
+  }
+
+  footer {
+    color: white;
+    text-align: center;
+    background-color: #004052;
+    width: 100%;
+    height: 70%;
+    padding: 4px;
+  }
+
+}
+
+/*********Large Style css************/
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    height: 200px;
+    margin: 0%;
+  }
+
+
+  header img {
+    width: 200px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  h2 {
+    padding-left: 350px;
+  }
+
+  .summdiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 960px;
+    height: 400px;
+  }
+
+  main img {
+    display: block;
+    object-fit: cover;
+    width: 960px;
+    height: 400px;
+  }
+
+  .weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: radial-gradient(#ffff47, lightyellow);
+    border: 1px solid;
+    padding: .5em;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    font-size: 20px;
+  }
+
+  section p {
+    margin: 0%;
+    font-weight: 300;
+  }
+
+  /*The begining of the forecast code*/
+  .content {
+    margin: 10px auto;
+    position: relative;
+    background-color: #004052;
+    width: 960px;
+    height: 100px;
+
+  }
+
+  .content h2 {
+    /*color: white;
+    align-items: center;
+    padding-top: 10px;*/
+  }
+
+
+  table {
+    position: absolute;
+    top: 60px;
+    left: 340px;
+  }
+
+  table,
+  th,
+  td {
+    background-color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    color: black;
+  }
+
+  td {
+    background-color: #004052;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  tr :first-child {
+    background-color: white;
+    color: black;
+  }
+
+  /* End of the table code*/
+
+
+  .article {
+    margin: 10px auto;
+    position: relative;
+    padding: 10px;
+    background-color: #bbb;
+    width: 960px;
+    height: 300px;
+  }
+
+  .artimage {
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
+    float: right;
+  }
+
+  footer {
+    color: white;
+    text-align: center;
+    background-color: #004052;
+    width: 100%;
+    height: 500px;
+    padding: 4px;
+  }
+
+  footer img {
+    float: left;
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 60px;
+    padding-left: 50px;
+  }
+
+}
