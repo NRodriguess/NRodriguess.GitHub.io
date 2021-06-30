@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,300;1,200&family=Yeseva+One&display=swap');
+
+/* This is the style for the header */
+header {
+  background-color: #99B5D6;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Yeseva One', cursive;
+}
+
+header img {
+  width: 90px;
+}
+
+.heading h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0 17px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-style: italic;
+  letter-spacing: 1pt;
+  color: #FFFF47;
+  margin-left: 20px;
+  font-size: .9rem;
+
+}
+
+/* The end of the header style*/
+
+nav {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #004052;
+  font-family: 'Montaga', serif;
+}
+
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0%;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.90rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.navigation a:hover {
+  color: black;
+  background-color: #ffff;
+
+}
+
+aside {
+  display: none;
+  background-color: #99B5D6;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.summdiv {
+  margin: 10px auto;
+  position: relative;
+  border: 1px;
+  width: 100%;
+  height: 70%;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: radial-gradient(#ffff47, lightyellow);
+  border: 1px solid;
+  padding: .5em;
+  line-height: 5px;
+  box-shadow: 0 0 30px #333;
+  opacity: .9;
+  font-size: 15px;
+}
+
+.summdiv img {
+  max-width: 100%;
+}
+
+
+
+.cards {
+  display: grid;
+  font-family: 'Montserrat';
+
+}
+
+.cards section {
+  display: grid;
+  max-width: 100%;
+  text-align: center;
+  background: #387794;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  border: solid #333;
+}
+
+.cards section img {
+  max-width: 100%;
+  align-self: end;
+  justify-self: center;
+}
+
+.responsive li {
+  display: block;
+}
+
+.news-part {
+  background-color: #FFFF47;
+  border: solid rgb(90, 82, 82);
+  margin: 10px;
+  padding: 5px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #004052;
+  width: 100%;
+  height: 70%;
+  padding: 0px;
+}
+
+@media only screen and (min-width: 32.5em) {
+
+  header {
+    height: 200px;
+    margin: 0%;
+  }
+
+
+  header img {
+    width: 200px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+  }
+
+  nav {
+    max-width: 100%;
+
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+
+  .summdiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 100%;
+    height: 70%;
+  }
+
+  .weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: radial-gradient(#ffff47, lightyellow);
+    border: 1px solid;
+    padding: .5em;
+    line-height: 30px;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    font-size: 20px;
+  }
+
+  main section p {
+    margin: 0%;
+    font-weight: 300;
+  }
+
+  .cards section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  .cards section:nth-child(even) img {
+    justify-self: right;
+  }
+
+  .cards section:nth-child(odd) .citytown {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .cards section img {
+    max-width: 100%;
+    align-self: end;
+  }
+
+
+  .responsive li {
+    display: block;
+  }
+
+  footer img {
+    width: 400px;
+    height: 250px;
+    float: left;
+  }
+
+  footer {
+    color: white;
+    text-align: center;
+    background-color: #004052;
+    width: 100%;
+    height: 70%;
+    padding: 4px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    height: 200px;
+    margin: 0%;
+  }
+
+
+  header img {
+    width: 200px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .summdiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px;
+    width: 960px;
+    height: 400px;
+  }
+
+  .snow {
+    display: block;
+    object-fit: cover;
+    width: 960px;
+    height: 400px;
+  }
+
+  .weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: radial-gradient(#ffff47, lightyellow);
+    border: 1px solid;
+    padding: .5em;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+    font-size: 20px;
+  }
+
+  section p {
+    margin: 0%;
+    font-weight: 300;
+  }
+
+  .cards section {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+    /*justify-items: center;
+    justify-content: center;
+    align-items: center;*/
+    padding-left: 260px;
+  }
+
+  .cards section:nth-child(odd) .citytown {
+    grid-column: 1;
+  }
+
+
+
+  footer {
+    color: white;
+    text-align: center;
+    background-color: #004052;
+    width: 100%;
+    height: 250px;
+    padding: 4px;
+  }
+
+}
