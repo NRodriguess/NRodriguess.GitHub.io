@@ -111,9 +111,12 @@ main {
   max-width: 100%;
 }
 
+
+
 .cards {
   display: grid;
   font-family: 'Montserrat';
+
 }
 
 .cards section {
@@ -233,10 +236,6 @@ footer {
     font-weight: 300;
   }
 
-  .cards section h2 {
-    padding-left: 0%;
-  }
-
   .cards section {
     grid-template-columns: 1fr 1fr;
   }
@@ -329,10 +328,6 @@ footer {
     display: none;
   }
 
-  h2 {
-    padding-left: 350px;
-  }
-
   .summdiv {
     margin: 10px auto;
     position: relative;
@@ -365,17 +360,23 @@ footer {
     font-weight: 300;
   }
 
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .cards section {
     grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+    /*justify-items: center;
+    justify-content: center;
+    align-items: center;*/
+    padding-left: 260px;
   }
 
   .cards section:nth-child(odd) .citytown {
     grid-column: 1;
   }
+
 
 
   footer {
