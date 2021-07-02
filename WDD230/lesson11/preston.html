@@ -3,17 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+
   <meta name="description" content="Weather site for lesson 4">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Site</title>
   <link rel="short icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,300;1,200&family=Yeseva+One&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="/WDD230/lesson11/css/preston.css">
+
+  <script defer src="/WDD230/lesson6/js/banner-6.js"></script>
   <script defer src='/WDD230/lesson6/js/windchill.js'></script>
-  <script defer src='js/index.js'></script>
 </head>
 
 <body>
@@ -30,12 +28,12 @@
   <nav>
     <ul class="navigation">
       <li><a class="menu" href="#"> Menu</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="preston.html">Preston</a></li>
-      <li><a href="sodasprings.html">Soda Springs</a></li>
-      <li><a href="fishhaven.html">Fish Haven</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
     </ul>
   </nav>
 
@@ -44,8 +42,13 @@
   </aside>
 
   <main>
+    <h2>Preston Idaho</h2>
     <div class="summdiv">
-      <img class='snow' src="images/snow.jpg" alt="snow">
+      <picture>
+        <source srcset="images/hero-medium.jpg" media='(min-width: 500px) and (max-width:799px)'>
+        <source srcset="images/hero-large1.jpg" media="(min-width: 800px)">
+        <img src="images/hero-small.jpg" alt="small">
+      </picture>
       <section class="weathersummary">
         <h3>Weather Summary</h3>
         <hr>
@@ -56,20 +59,26 @@
         <p>Wind Chill: <span id="windoutput"></span>&deg;F</p>
       </section>
     </div>
+
+    <div class="container">
+      <p>oieeeeeee</p>
+
+    </div>
+
+
+    <div class="article">
+      <picture>
+        <source srcset="images/article-medium.jpg" media='(min-width: 500px) and (max-width:799px)'>
+        <source srcset="images/article1.jpg" media="(min-width: 800px)">
+        <img class="artimage" src="images/article-small.jpg" alt="winter">
+      </picture>
+      <h3>Article</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam itaque voluptatibus quas dignissimos repellendus
+        facere asperiores. Aspernatur veritatis, quod ipsa temporibus iusto ea laboriosam obcaecati maiores, quae
+        nostrum sunt debitis?</p>
+    </div>
   </main>
 
-  <div class='contanier'>
-    <div class="cards"></div>
-  </div>
-
-  <div class="news-part">
-    <h1>New part next week</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit culpa alias consequuntur facilis nulla ipsam
-        doloremque ab! Accusantium aperiam esse voluptatibus expedita dolores, dolore, dolorem quasi animi, ducimus
-        optio sequi!</p>
-  </div>
-
-  </div>
   <footer>
     <img src="images/maps.jpeg" alt="maps">
     <h2>Contact information</h2>
@@ -81,10 +90,16 @@
       Last updated: <span id="currentDay"></span>
     </p>
   </footer>
-  <script src="js/date.js"></script>
+  <script src="js/preston-6.js"></script>
   <script src="js/menu.js"></script>
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Montserrat, Yeseva One']
+      }
+    });
+  </script>
 </body>
 
 </html>
