@@ -106,6 +106,43 @@ main {
   font-size: 12px;
 }
 
+.container {
+  display: block;
+  max-width: 960px;
+  padding-left: 260px;
+  border: solid #333;
+}
+
+.five-forecast {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.five-forecast img {
+  max-width: 100px;
+  height: 80px;
+}
+
+.five-day {
+  text-align: center;
+  background: #004052;
+  flex: 1 1 0px;
+  margin: 5px;
+  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.five-day p {
+  margin: 5px;
+}
+
+.five-day p:first-child {
+  font-weight: bold;
+}
+
+
 .content {
   text-align: center;
   max-width: 100%;
@@ -228,37 +265,6 @@ footer {
     padding-top: 10px;
     padding-left: 70px;*/
   }
-
-
-  table {
-    position: absolute;
-    top: 60px;
-    left: 150px;
-  }
-
-  table,
-  th,
-  td {
-    background-color: white;
-    border: 1px solid white;
-    border-collapse: collapse;
-    padding: 5px;
-    color: black;
-  }
-
-  td {
-    background-color: #004052;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-  }
-
-  tr :first-child {
-    background-color: white;
-    color: black;
-  }
-
-  /* End of the table code*/
 
   img,
   .artimage {
@@ -383,37 +389,6 @@ footer {
     align-items: center;
     padding-top: 10px;*/
   }
-
-
-  table {
-    position: absolute;
-    top: 60px;
-    left: 340px;
-  }
-
-  table,
-  th,
-  td {
-    background-color: white;
-    border: 1px solid white;
-    border-collapse: collapse;
-    padding: 5px;
-    color: black;
-  }
-
-  td {
-    background-color: #004052;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-  }
-
-  tr :first-child {
-    background-color: white;
-    color: black;
-  }
-
-  /* End of the table code*/
 
 
   .article {
