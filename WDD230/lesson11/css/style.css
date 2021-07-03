@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,300;1,200&family=Yeseva+One&display=swap');
 
-/* This is the style for the header */
+
 header {
   background-color: #99B5D6;
   padding: 5px 0;
@@ -111,43 +111,45 @@ main {
   max-width: 100%;
 }
 
-
-
 .cards {
   display: grid;
-  font-family: 'Montserrat';
-
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cards section {
   display: grid;
   max-width: 100%;
   text-align: center;
-  background: #387794;
-  padding: 10px;
+  background: #004052;
   margin: 5px;
   color: white;
   border: solid #333;
 }
 
-.cards section img {
-  max-width: 100%;
-  align-self: end;
-  justify-self: center;
+.cards img {
+  width: 100%;
 }
 
 .responsive li {
   display: block;
 }
 
-.news-part {
-  background-color: #FFFF47;
-  border: solid rgb(90, 82, 82);
-  margin: 10px;
-  padding: 5px;
+.article {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.artimage {
+  width: 100%;
+  height: 70%;
+}
+
+
+footer img {
+  max-width: 100%;
 }
 
 footer {
+  font-family: 'Montserrat', sans-serif;
   color: white;
   text-align: center;
   background-color: #004052;
@@ -258,9 +260,13 @@ footer {
     align-self: end;
   }
 
-
   .responsive li {
     display: block;
+  }
+
+  .artimage {
+    width: 100%;
+    height: 70%;
   }
 
   footer img {
@@ -367,16 +373,31 @@ footer {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 960px;
-    /*justify-items: center;
-    justify-content: center;
-    align-items: center;*/
-    padding-left: 190px;
+    margin: 0 auto;
   }
 
   .cards section:nth-child(odd) .citytown {
     grid-column: 1;
   }
 
+  .article {
+    margin: 10px auto;
+    position: relative;
+    padding: 10px;
+    background-color: #004052;
+    color: white;
+    width: 960px;
+    height: 300px;
+  }
+
+
+
+  .artimage {
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
+    float: right;
+  }
 
 
   footer {

@@ -86,6 +86,10 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 
+main img {
+  width: 100%;
+}
+
 .summdiv {
   margin: 10px auto;
   position: relative;
@@ -96,31 +100,63 @@ main {
 
 .weathersummary {
   position: absolute;
-  top: 20px;
+  top: 70px;
   left: 20px;
   background: radial-gradient(#ffff47, lightyellow);
   border: 1px solid;
-  padding: .5em;
+  padding: .4em;
   box-shadow: 0 0 30px #333;
   opacity: .9;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .container {
-  max-width: 960px;
-  height: 500px;
+  display: block;
+  max-width: 100%;
   border: solid #333;
+  margin: 10px;
 }
 
+.five-forecast {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-img,
+.five-forecast img {
+  max-width: 100px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.five-day {
+  text-align: center;
+  background: #99B5D6;
+  flex: 1 1 0px;
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 20px;
+  box-shadow: 0 8px 6px -6px #004052;
+}
+
+.five-day p {
+  margin: 5px;
+}
+
+.five-day p:first-child {
+  font-weight: bold;
+}
+
 .artimage {
   width: 100%;
-  height: 70%;
 }
 
 .responsive li {
   display: block;
+}
+
+footer img {
+  max-width: 100%;
 }
 
 footer {
@@ -132,6 +168,7 @@ footer {
   padding: 0px;
 }
 
+/*********Medium Style css************/
 @media only screen and (min-width: 32.5em) {
 
   header {
@@ -185,14 +222,16 @@ footer {
     display: none;
   }
 
-  main h2 {
-    padding-left: 350px;
-  }
 
   .summdiv {
     margin: 10px auto;
     position: relative;
     border: 1px;
+    width: 100%;
+    height: 70%;
+  }
+
+  .summdiv img {
     width: 100%;
     height: 70%;
   }
@@ -214,25 +253,11 @@ footer {
     font-weight: 300;
   }
 
-  /*The begining of the forecast code*/
-  .content {
-    margin: 10px auto;
-    position: relative;
-    background-color: #004052;
-    width: 100%;
-    height: 150px;
-  }
-
-
-
-  img,
   .artimage {
-    width: 100%;
-    height: 70%;
+    height: 350px;
   }
 
-
-  .responsive li {
+  .artimage .responsive li {
     display: block;
   }
 
@@ -246,6 +271,8 @@ footer {
   }
 
 }
+
+/*********Large Style css************/
 
 @media only screen and (min-width: 60em) {
 
@@ -295,9 +322,6 @@ footer {
     display: none;
   }
 
-  h2 {
-    padding-left: 350px;
-  }
 
   .summdiv {
     margin: 10px auto;
@@ -305,6 +329,11 @@ footer {
     border: 1px;
     width: 960px;
     height: 400px;
+  }
+
+  .summdiv img {
+    max-width: 100%;
+    height: 100%;
   }
 
   main img {
@@ -316,8 +345,8 @@ footer {
 
   .weathersummary {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 80px;
+    left: 30px;
     background: radial-gradient(#ffff47, lightyellow);
     border: 1px solid;
     padding: .5em;
@@ -331,12 +360,19 @@ footer {
     font-weight: 300;
   }
 
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 5%;
+    height: 70%;
+  }
 
   .article {
     margin: 10px auto;
     position: relative;
     padding: 10px;
-    background-color: #bbb;
+    background-color: #004052;
+    color: white;
     width: 960px;
     height: 300px;
   }
@@ -348,13 +384,12 @@ footer {
     float: right;
   }
 
-
   footer {
     color: white;
     text-align: center;
     background-color: #004052;
     width: 100%;
-    height: 500px;
+    height: 300px;
     padding: 4px;
   }
 
@@ -362,9 +397,8 @@ footer {
     float: left;
     object-fit: cover;
     width: 400px;
-    height: 300px;
-    margin: 60px;
-    padding-left: 50px;
+    height: 250px;
+    margin-left: 13%;
+    margin-top: 10px;
   }
-
 }
