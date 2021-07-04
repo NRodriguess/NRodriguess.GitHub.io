@@ -1,4 +1,4 @@
-
+/* To write those codes I got help from Brenda from my group evn if I am not able to complete*/
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=598afcc840d433c248fad5fe3deff034&units=imperial`;
 
 fetch(apiURL)

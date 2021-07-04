@@ -1,3 +1,6 @@
+/*I worked with brenda from my group and I got some help from Sterling and Pedro that are not from my group.*/
+
+
 const cityid = "5604473";
 const APPID = "598afcc840d433c248fad5fe3deff034";
 
@@ -26,12 +29,12 @@ fetch(apiURL)
             forecastImg.setAttribute('alt', "Weather Icon");
             dayHighTemp.textContent = dayHigh + ' °F';
 
-            dayContainer.classList.add("five-day");
+            dayContainer.classList.add("days");
             dayContainer.appendChild(weekDayBox);
             dayContainer.appendChild(forecastImg);
             dayContainer.appendChild(dayHighTemp);
 
-            document.querySelector('div.five-forecast').appendChild(dayContainer);
+            document.querySelector('div.forecast').appendChild(dayContainer);
 
             console.log(forecastImg)
 

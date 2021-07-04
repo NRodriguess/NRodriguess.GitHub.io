@@ -117,19 +117,19 @@ main img {
   margin: 10px;
 }
 
-.five-forecast {
+.forecast {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.five-forecast img {
+.forecast img {
   max-width: 100px;
   height: 70px;
   margin: 0 auto;
 }
 
-.five-day {
+.days {
   text-align: center;
   background: #99B5D6;
   flex: 1 1 0px;
@@ -139,11 +139,11 @@ main img {
   box-shadow: 0 8px 6px -6px #004052;
 }
 
-.five-day p {
+.days p {
   margin: 5px;
 }
 
-.five-day p:first-child {
+.days p:first-child {
   font-weight: bold;
 }
 

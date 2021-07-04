@@ -26,12 +26,12 @@ fetch(apiURL)
             forecastImg.setAttribute('alt', "Weather Icon");
             dayHighTemp.textContent = dayHigh + ' °F';
 
-            dayContainer.classList.add("five-day");
+            dayContainer.classList.add("days");
             dayContainer.appendChild(weekDayBox);
             dayContainer.appendChild(forecastImg);
             dayContainer.appendChild(dayHighTemp);
 
-            document.querySelector('div.five-forecast').appendChild(dayContainer);
+            document.querySelector('div.forecast').appendChild(dayContainer);
 
             console.log(forecastImg)
 
