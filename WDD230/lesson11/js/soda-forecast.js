@@ -1,4 +1,4 @@
-const cityid = "5604473";
+const cityid = "5607916";
 const APPID = "598afcc840d433c248fad5fe3deff034";
 
 const apiURL = `http://api.openweathermap.org/data/2.5/forecast?id=${cityid}&appid=${APPID}&units=imperial`;
@@ -36,5 +36,8 @@ fetch(apiURL)
             console.log(forecastImg)
 
         });
-  });
 
+
+
+
+    });

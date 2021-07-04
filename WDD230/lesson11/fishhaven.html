@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="Weather site Fish Haven">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Haven</title>
+  <link rel="short icon" href="images/favicon1.ico">
+  <link rel="stylesheet" href="css/city.css">
+
+  <script defer src="js/banner.js"></script>
+  <script defer src='/WDD230/lesson6/js/windchill.js'></script>
+  <script defer src='js/fish-haven-forecast.js'></script>
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="images/weather-mountain.png" alt="The mountain logo">
+    </picture>
+    <section class="heading">
+      <h1>Mountains weather news</h1>
+      <div class="subtitle">All the weather information you need</div>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a class="menu" href="#"> Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <p>"Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion."</p>
+  </aside>
+
+
+  <main>
+    <div class="summdiv">
+      <h1>Fish Haven</h1>
+      <picture>
+        <source srcset="images/hero-medium.jpg" media='(min-width: 500px) and (max-width:799px)'>
+        <source srcset="images/hero-large1.jpg" media="(min-width: 800px)">
+        <img src="images/hero-small.jpg" alt="small size">
+      </picture>
+
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <hr>
+        <p>Currently: Sunny</p>
+        <p>Temperature: <span id="temp">40</span>&deg;F</p>
+        <p>Humidity: 50%</p>
+        <p>Wind Speed: <span id="windspeed">8</span>mph</p>
+        <p>Wind Chill: <span id="windoutput"></span>&deg;F</p>
+      </section>
+    </div>
+
+
+    <section class="container">
+      <h2>Forecast</h2>
+      <div class="five-forecast">
+      </div>
+    </section>
+
+    <div class="article">
+      <picture>
+        <source srcset="images/medium-fh.jpg" media='(min-width: 500px) and (max-width:799px)'>
+        <source srcset="images/large-fh.jpg" media="(min-width: 800px)">
+        <img class="artimage" src="images/small-fh.jpg" alt="road">
+      </picture>
+      <h3>Fish Haven information</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam itaque voluptatibus quas dignissimos repellendus
+        facere asperiores. Aspernatur veritatis, quod ipsa temporibus iusto ea laboriosam obcaecati maiores, quae
+        nostrum sunt debitis?</p>
+    </div>
+  </main>
+
+  <footer>
+    <img src="images/maps.jpeg" alt="maps">
+    <h2>Contact information</h2>
+    <p>Adress: 20198768</p>
+    <p>Phone: 20198768</p>
+    <p>Email: name@gmail.com</p><br>
+    <p id="copy">
+      &copy; <span id="currentyear"></span> The Weather Site | Attributions | Nicolas Rodrigues |
+      Last updated: <span id="currentDay"></span>
+    </p>
+  </footer>
+  <script src="js/date.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Montserrat, Yeseva One']
+      }
+    });
+  </script>
+</body>
+
+</html>

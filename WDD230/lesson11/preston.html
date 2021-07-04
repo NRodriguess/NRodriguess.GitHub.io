@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta name="description" content="Weather site for lesson 4">
+  <meta name="description" content="Weather site Preston page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Site</title>
+  <title>Preston page</title>
   <link rel="short icon" href="images/favicon1.ico">
-  <link rel="stylesheet" href="css/preston.css">
+  <link rel="stylesheet" href="css/city.css">
 
   <script defer src="js/banner.js"></script>
-  <script defer src='/WDD230/lesson6/js/windchill.js'></script>
   <script defer src='js/forecast.js'></script>
+  <script defer src='js/weather.js'></script>
 </head>
 
 <body>
   <header>
     <picture>
-      <img src="images/weather-mountain.png" alt="The world logo">
+      <img src="images/weather-mountain.png" alt="The mountain logo">
     </picture>
     <section class="heading">
       <h1>Mountains weather news</h1>
@@ -55,11 +55,11 @@
       <section class="weathersummary">
         <h3>Weather Summary</h3>
         <hr>
-        <p>Currently: Sunny</p>
-        <p>Temperature: <span id="temp">40</span>&deg;F</p>
-        <p>Humidity: 50%</p>
-        <p>Wind Speed: <span id="windspeed">8</span>mph</p>
-        <p>Wind Chill: <span id="windoutput"></span>&deg;F</p>
+        <p>Currently: <span id="currently"> </span> </p>
+        <p>High: <span id="high"></span> °F </p>
+        <p>Wind Chill: <span id="wind"> </span> °F</p>
+        <p>Humidity: <span id="humidity"> </span> % </p>
+        <p>Wind Speed: <span id="speed"></span> mph </p>
       </section>
     </div>
 
@@ -74,9 +74,9 @@
       <picture>
         <source srcset="images/medium-preston.jpg" media='(min-width: 500px) and (max-width:799px)'>
         <source srcset="images/large-preston.jpg" media="(min-width: 800px)">
-        <img class="artimage" src="images/small-preston.jpg" alt="winter">
+        <img class="artimage" src="images/small-preston.jpg" alt="downtown">
       </picture>
-      <h3>Article</h3>
+      <h3>The weather information to Preston</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam itaque voluptatibus quas dignissimos repellendus
         facere asperiores. Aspernatur veritatis, quod ipsa temporibus iusto ea laboriosam obcaecati maiores, quae
         nostrum sunt debitis?</p>
