@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Final Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/WDD230/lesson12/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-banner">
+      <picture>
+        <source srcset="images/medium.jpg" media='(min-width: 500px) and (max-width:799px)'>
+        <source srcset="images/large.jpg" media="(min-width: 800px)">
+        <img src="images/small.jpg" alt="small">
+      </picture>
+      <h1>Visit Santos</h1>
+    </div>
+    <div class="clear"></div>
+
+    <nav>
+      <div class="site-title">Finland</div>
+      <ul class="navigation">
+        <li><a class="menu" href="#"> Menu</a></li>
+        <li><a href="/events">Home</a></li>
+        <li><a href="/join">Join</a></li>
+        <li><a href="/directory">Directory</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="summdiv">
+      <img class='snow' src="images/brazil-flag.jpg" alt="brazil">
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <hr>
+        <p>Currently: Sunny</p>
+        <p>Temperature: <span id="temp">40</span>&deg;F</p>
+        <p>Humidity: 50%</p>
+        <p>Wind Speed: <span id="windspeed">8</span>mph</p>
+        <p>Wind Chill: <span id="windoutput"></span>&deg;F</p>
+      </section>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
