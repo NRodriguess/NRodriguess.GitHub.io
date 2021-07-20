@@ -1,10 +1,10 @@
 /*I worked with brenda from my group and I got some help from Sterling and Pedro that are not from my group.*/
 
 
-const cityid = "5604473";
+const cityid = "3449433";
 const APPID = "598afcc840d433c248fad5fe3deff034";
 
-const apiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${cityid}&appid=${APPID}&units=imperial`;
+const apiURL = `http://api.openweathermap.org/data/2.5/forecast?id=${cityid}&appid=${APPID}&units=imperial`;
 
 fetch(apiURL)
     .then((response) => response.json())

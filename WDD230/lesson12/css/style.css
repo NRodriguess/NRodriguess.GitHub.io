@@ -1,84 +1,57 @@
-/* main */
 header {
-  height: 360px;
-  z-index: 10;
+  background-color: #99B5D6;
+  background-image: url(../images/santos.jpg);
+  height: 200px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-family: 'Yeseva One', cursive;
 }
 
-.header-banner img {
-  max-width: 100%;
-  height: 100%;
+header img {
+  width: 90px;
+  margin-left: 50px;
 }
 
-.header-banner {
-  background-color: #333;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 150px;
+.heading {
+  margin-left: 50px;
 }
 
-header h1 {
-  background-color: rgba(18, 72, 120, 0.8);
-  color: #fff;
-  padding: 0 1rem;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-}
 
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+/* The end of the header style*/
 
 nav {
-  width: 100%;
-  height: 60px;
   margin: 0 auto;
-  background: #292f36;
-  position: fixed;
-  z-index: 10;
-}
-
-nav div {
-  color: white;
-  font-size: 2rem;
-  line-height: 60px;
-  position: absolute;
-  top: 0;
-  left: 2%;
-  visibility: hidden;
-}
-
-.visible-title {
-  visibility: visible;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0 5% auto 0;
-  padding-left: 0;
-  text-align: center;
   max-width: 100%;
+  background-color: #004052;
+  font-family: 'Montaga', serif;
 }
 
-nav ul li {
-  display: inline-block;
-  line-height: 60px;
-  margin-left: 5px;
-  padding-left: 10%;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: #a9abae;
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0%;
 }
 
 .navigation li:first-child {
   display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.90rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+
 }
 
 .navigation a:hover {
@@ -86,68 +59,99 @@ nav ul li a {
   background-color: #ffff;
 }
 
-.navigation li {
-  display: none;
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 15px;
+
 }
 
-@media only screen and (min-width: 32.5em) {
+.port {
+  height: 300px;
+  margin: 5% 5px;
+  /*border: solid #004052;*/
+}
 
-  .header-banner {
-    background-color: #333;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-  }
+.weathersummary {
+  position: absolute;
+  top: 60%;
+  left: 40px;
+  background: radial-gradient(#ffff47, lightyellow);
+  border: 1px solid;
+  padding: .5em;
+  line-height: 5px;
+  box-shadow: 0 0 30px #333;
+  opacity: .9;
+  font-size: 15px;
+}
 
-  .header-banner img {
-    max-width: 100%;
-  }
+.port img {
+  width: 100%;
+  height: 300px;
+}
 
-  nav {
-    width: 99%;
-    height: 60px;
-    margin: 0 auto;
-    background: #292f36;
-    position: fixed;
-    z-index: 10;
-  }
+.news {
+  margin-top: 10%;
+  padding: 5px;
+  border: solid #004052;
+}
 
-  nav div {
-    color: white;
-    font-size: 2rem;
-    line-height: 60px;
-    position: absolute;
-    top: 0;
-    left: 2%;
-    visibility: hidden;
-  }
-
-  .visible-title {
-    visibility: visible;
-  }
-
-  nav ul {
-    list-style-type: none;
-    margin: 0 5% auto 0;
-    padding-left: 0;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  nav ul li {
-    display: inline-block;
-    line-height: 60px;
-    margin-left: 5px;
-    padding-left: 10%;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    color: #a9abae;
-  }
+.news h3 {
+  padding-left: 5%;
+}
 
 
+.news-list li a img {
+  float: left;
+  margin: 5px;
 
+}
+
+.news-list li a {
+  text-decoration: none;
+}
+
+.news-list li a h3 {
+  font-size: 0.8em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+.news-list li a p {
+  font-size: 0.7em;
+  color: #000;
+  margin-top: 0%;
+}
+
+.news-list li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  max-width: 100%;
+  border: solid #333;
+  margin: 10px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.forecast img {
+  max-width: 100px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #004052;
+  max-width: 100%;
+  height: 70px;
+  padding: 0px;
 }

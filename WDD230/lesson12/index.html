@@ -3,39 +3,41 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Final Project">
+  <meta name="description" content="Weather site Preston page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/WDD230/lesson12/css/style.css">
+  <title>Chamber of commerce</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/forecast.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="header-banner">
-      <picture>
-        <source srcset="images/medium.jpg" media='(min-width: 500px) and (max-width:799px)'>
-        <source srcset="images/large.jpg" media="(min-width: 800px)">
-        <img src="images/small.jpg" alt="small">
-      </picture>
-      <h1>Visit Santos</h1>
-    </div>
-    <div class="clear"></div>
-
-    <nav>
-      <div class="site-title">Finland</div>
-      <ul class="navigation">
-        <li><a class="menu" href="#"> Menu</a></li>
-        <li><a href="/events">Home</a></li>
-        <li><a href="/join">Join</a></li>
-        <li><a href="/directory">Directory</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <ul>
-    </nav>
+    <picture>
+      <img src="images/weather-mountain.png" alt="The mountain logo">
+    </picture>
+    <section class="heading">
+      <h1>Mountains weather news</h1>
+      <div class="subtitle">All the weather information you need</div>
+    </section>
   </header>
 
+  <nav>
+    <ul class="navigation">
+      <li><a class="menu" href="#"> Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <div class="summdiv">
-      <img class='snow' src="images/brazil-flag.jpg" alt="brazil">
+    <div class="port">
+      <img src="images/contanier (1).jpg" alt="port of santos">
       <section class="weathersummary">
         <h3>Weather Summary</h3>
         <hr>
@@ -46,9 +48,62 @@
         <p>Wind Chill: <span id="windoutput"></span>&deg;F</p>
       </section>
     </div>
+
+    <div class="news">
+      <h3>Latest News</h3>
+      <ul class="news-list">
+        <li>
+          <a href="">
+            <img src="images/tecnologia.jpg" width=" 80">
+            <h3>Agro company</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <img src="images/tecnologia.jpg" width=" 80">
+            <h3>New technologies</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <img src="images/tecnologia.jpg" width="80">
+            <h3>Transpot</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <img src="images/tecnologia.jpg" width="80">
+            <h3>Marketing</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </main>
 
-  <footer></footer>
+  <section class="container">
+    <h2>Forecast</h2>
+    <div class="forecast">
+    </div>
+  </section>
+
+  <div class='contanier'>
+    <div class="cards"></div>
+  </div>
+
+  <footer>
+    <p id="copy">
+      &copy; <span id="currentyear"></span> The Weather Site | Attributions | Nicolas Rodrigues |
+      Last updated: <span id="currentDay"></span>
+    </p>
+  </footer>
+  <script src="js/data.js"></script>
 </body>
 
 </html>
