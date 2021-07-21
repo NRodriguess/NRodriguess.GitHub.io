@@ -1,0 +1,43 @@
+{
+  "companies": [
+    {
+      "name": "Usiminas",
+      "photo": "sodasprings.jpg",
+      "motto": "More than producing and transforming steel, we offer technological and innovative solutions..",
+      "yearFounded": 1956,
+      "service": "production and sale of flat steel",
+      "contact": "Phone : 551333622000 Site: usiminas.com",
+      "events": [
+        "February 29: Geyser Song Day",
+        "May 1-6: Days of May Celebration",
+        "October 15-16: Octoberfest"
+      ]
+    },
+    {
+      "name": "HRC Obras",
+      "photo": "sodasprings.jpg",
+      "motto": "Work is Commitment and our commitment is with you.",
+      "yearFounded": 2015,
+      "service": "constrution",
+      "contact": "Phone : 5513991872180 Email: contato@hrcobras.com.br",
+      "events": [
+        "February 29: Geyser Song Day",
+        "May 1-6: Days of May Celebration",
+        "October 15-16: Octoberfest"
+      ]
+    },
+    {
+      "name": "FCL LOG",
+      "photo": "sodasprings.jpg",
+      "motto": "Your cargo delivered safely and quickly.",
+      "yearFounded": 2010,
+      "service": "Road transport of import and export cargo",
+      "contact": "Phone : 551332198656 Email: fcllog@fcllog.com.br",
+      "events": [
+        "February 29: Geyser Song Day",
+        "May 1-6: Days of May Celebration",
+        "October 15-16: Octoberfest"
+      ]
+    }
+  ]
+}

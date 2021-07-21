@@ -3,6 +3,7 @@
 
 header {
   background-color: #99B5D6;
+  width: 100%;
   padding: 5px 0;
   display: flex;
   align-items: center;
@@ -11,7 +12,7 @@ header {
 }
 
 header img {
-  width: 90px;
+  width: 100%;
 }
 
 .heading h1 {
